@@ -6,16 +6,8 @@ namespace Homework_2
     {
         static void Main(string[] args)
         {
+            //Task 1 - Написать метод, возвращающий минимальное из трёх чисел.
 
-            /*
-            int x;
-            Console.WriteLine("Введите целое число.");
-            x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(x + " - " + ((x % 2 == 0) ? "четное число" : "нечетное число"));
-            Console.WriteLine("Для выхода из приложение нажмите Enter");
-            Console.ReadLine();*/
-
-            /*Task 1 - Написать метод, возвращающий минимальное из трёх чисел.
             int x;
             Console.WriteLine("Введите первое число");
             x = Convert.ToInt32(Console.ReadLine());
@@ -37,8 +29,10 @@ namespace Homework_2
             {
                 Console.WriteLine("Минимальное число " + c);
             }
+            Console.WriteLine("Для выхода из приложение нажмите Enter");
 
             //Task 2 - Написать метод подсчета количества цифр числа.
+
             int a;
             int counter = 0;
             Console.WriteLine("Введите число");
@@ -50,6 +44,7 @@ namespace Homework_2
                 counter++;
             }
             Console.WriteLine("Число содержит " + counter + " цифр");
+            Console.WriteLine("Для выхода из приложение нажмите Enter");
         }
     }
 }
