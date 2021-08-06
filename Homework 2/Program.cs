@@ -6,7 +6,7 @@ namespace Homework_2
     {
         static void Main(string[] args)
         {
-            //Task 1 - Написать метод, возвращающий минимальное из трёх чисел.
+            /*//Task 1 - Написать метод, возвращающий минимальное из трёх чисел.
 
             int x;
             Console.WriteLine("Введите первое число");
@@ -44,7 +44,25 @@ namespace Homework_2
                 counter++;
             }
             Console.WriteLine("Число содержит " + counter + " цифр");
-            Console.WriteLine("Для выхода из приложение нажмите Enter");
+            Console.WriteLine("Для выхода из приложение нажмите Enter");*/
+
+            //Task 3 - С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел.
+
+            int a;
+            int k = 0;
+            Console.WriteLine("Введите число");
+            a = Convert.ToInt32(Console.ReadLine());
+            while (a != 0)
+            {
+                if (a > 0 && a % 2 != 0) 
+                {
+                    k += a; 
+                }
+                a = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine(k);
+
+
         }
     }
 }
