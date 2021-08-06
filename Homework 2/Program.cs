@@ -6,7 +6,7 @@ namespace Homework_2
     {
         static void Main(string[] args)
         {
-            /*//Task 1 - Написать метод, возвращающий минимальное из трёх чисел.
+            //Task 1 - Написать метод, возвращающий минимальное из трёх чисел.
 
             int x;
             Console.WriteLine("Введите первое число");
@@ -33,17 +33,17 @@ namespace Homework_2
 
             //Task 2 - Написать метод подсчета количества цифр числа.
 
-            int a;
-            int counter = 0;
+            int y;
+            int count = 0;
             Console.WriteLine("Введите число");
-            a = Convert.ToInt32(Console.ReadLine());
-            while(a > 0)
+            y = Convert.ToInt32(Console.ReadLine());
+            while(y > 0)
             {
-                a = a / 10;
-                Console.WriteLine(a);
-                counter++;
+                y = y / 10;
+                Console.WriteLine(y);
+                count++;
             }
-            Console.WriteLine("Число содержит " + counter + " цифр");
+            Console.WriteLine("Число содержит " + count + " цифр");
             Console.WriteLine("Для выхода из приложение нажмите Enter");
 
             //Task 3 - С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел.
@@ -60,7 +60,7 @@ namespace Homework_2
                 }
                 a = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine(k);*/
+            Console.WriteLine(k);
 
             //Task 4 - Реализовать метод проверки логина и пароля. На вход метода подается логин и пароль.
             //На выходе истина, если прошел авторизацию, и ложь, если не прошел (Логин: root, Password: GeekBrains).
@@ -93,15 +93,6 @@ namespace Homework_2
             }
             while (counter < 2);
             Console.WriteLine("Для выхода из приложение нажмите Enter");
-
-
-
-
-
-
-
-
-
         }
     }
 }
