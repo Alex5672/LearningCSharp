@@ -44,7 +44,7 @@ namespace Homework_2
                 counter++;
             }
             Console.WriteLine("Число содержит " + counter + " цифр");
-            Console.WriteLine("Для выхода из приложение нажмите Enter");*/
+            Console.WriteLine("Для выхода из приложение нажмите Enter");
 
             //Task 3 - С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел.
 
@@ -60,7 +60,46 @@ namespace Homework_2
                 }
                 a = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine(k);
+            Console.WriteLine(k);*/
+
+            //Task 4 - Реализовать метод проверки логина и пароля. На вход метода подается логин и пароль.
+            //На выходе истина, если прошел авторизацию, и ложь, если не прошел (Логин: root, Password: GeekBrains).
+            //Используя метод проверки логина и пароля, написать программу: пользователь вводит логин и пароль,
+            //программа пропускает его дальше или не пропускает. С помощью цикла do while ограничить ввод пароля тремя попытками.
+
+            string log;
+            string password;
+            int counter = 0;
+            Console.WriteLine("Введите логин ");
+            log = Console.ReadLine();
+            Console.WriteLine("Введите пароль ");
+            password = Console.ReadLine();
+            //Console.Write("Логин - " + log + " Пароль - " + password);
+            do
+            {
+                if (log != "root" || password != "GeekBrains")
+                {
+                    Console.WriteLine("Логин или пароль введен неверно!");
+                    Console.WriteLine("Введите логин ");
+                    log = Console.ReadLine();
+                    Console.WriteLine("Введите пароль ");
+                    password = Console.ReadLine();
+                }
+                else 
+                {
+                    Console.WriteLine("Добро пожаловать в систему! "); break;
+                }
+                counter++;
+            }
+            while (counter < 2);
+            Console.WriteLine("Для выхода из приложение нажмите Enter");
+
+
+
+
+
+
+
 
 
         }
