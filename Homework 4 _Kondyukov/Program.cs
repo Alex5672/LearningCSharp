@@ -60,9 +60,9 @@ namespace Homework_4__Kondyukov
             }*/
             Console.WriteLine();
             int pair = 0;
-            for (int i = 0; i < Massive.Length; i++)
+            for (int i = 0; i < Massive.Length-1; i++)
             {
-                if (Massive[i] % 3 == 0 && Massive[i + 1] % 3 != 0)
+                if (Massive[i] % 3 == 0 && Massive[i + 1] % 3 != 0 || Massive[i] % 3 != 0 && Massive[i + 1] % 3 == 0)
                 {
                     pair++;
                 }
