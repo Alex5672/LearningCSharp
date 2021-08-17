@@ -8,64 +8,49 @@ namespace Homework_2
         {
             Console.WriteLine("Находим минимальное значение ");
             Random rnd = new Random();
-            int a = rnd.Next(20);
-            int b = rnd.Next(20);
+            int a = rnd.Next(-100, 100);
+            int b = rnd.Next(-100, 100);
+            int c = rnd.Next(-100, 100);
             Console.WriteLine("Первое значение " + a);
             Console.WriteLine("Второе значение " + b);
+            Console.WriteLine("Третье значение " + c);
+            Console.WriteLine();
             int min;
-            if (a > b)
+            if (a < b && a < c)
+            {
+                min = a;
+            }
+            else if (b < c)
             {
                 min = b;
             }
             else
             {
-                min = a;
+                min = c;
             }
             return min;
         } 
+        static public int CountDigits()
+        {
+            Console.WriteLine();
+            Random rnd = new Random();
+            int a = rnd.Next(10, 20000);
+            Console.WriteLine("Считаем количество чисел числа " + a);
+            int b = 0;
+            while (a > 0)
+            {
+                a = a / 10;
+                b++;
+            }
+            return b;
+        }
         static void Main(string[] args)
         {
             //Task 1 - Написать метод, возвращающий минимальное из трёх чисел.
             Console.WriteLine("Минимальное значение " + Minimum());
 
-
-            /*int x;
-            Console.WriteLine("Введите первое число");
-            x = Convert.ToInt32(Console.ReadLine());
-            int b;
-            Console.WriteLine("Введите второе число");
-            b = Convert.ToInt32(Console.ReadLine());
-            int c;
-            Console.WriteLine("Введите третье число");
-            c = Convert.ToInt32(Console.ReadLine());
-            if (x < b && x < c)
-            {
-                Console.WriteLine("Минимальное число " + x);
-            }
-            else if (b < c)
-            {
-                Console.WriteLine("Минимальное число " + b);
-            }
-            else
-            {
-                Console.WriteLine("Минимальное число " + c);
-            }
-            Console.WriteLine("Для выхода из приложение нажмите Enter");
-
             //Task 2 - Написать метод подсчета количества цифр числа.
-
-            int y;
-            int count = 0;
-            Console.WriteLine("Введите число");
-            y = Convert.ToInt32(Console.ReadLine());
-            while(y > 0)
-            {
-                y = y / 10;
-                Console.WriteLine(y);
-                count++;
-            }
-            Console.WriteLine("Число содержит " + count + " цифр");
-            Console.WriteLine("Для выхода из приложение нажмите Enter");
+            Console.WriteLine("Количество цифр в числе " + CountDigits());
 
             //Task 3 - С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел.
 

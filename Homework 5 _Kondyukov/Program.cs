@@ -23,18 +23,6 @@ namespace Homework_5__Kondyukov
                 }
             }
         }
-        //б) Удалить из сообщения все слова, которые заканчиваются на заданный символ.
-        static public void CancelWords(char can)
-        {
-            string[] words = text.Split(new char[] {' ', ',', '.', '-', '\n', '\t'});
-            foreach (string word in words)
-            {
-                if (word[word.Length - 1] == ed)
-                {
-                    Console.Write(word);
-                }
-            }
-        }
     }
     class Program
     {
