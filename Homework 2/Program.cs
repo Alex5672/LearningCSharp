@@ -54,7 +54,7 @@ namespace Homework_2
 
             //Task 3 - С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел.
 
-            int a;
+            /*int a;
             int k = 0;
             Console.WriteLine("Введите число");
             a = Convert.ToInt32(Console.ReadLine());
