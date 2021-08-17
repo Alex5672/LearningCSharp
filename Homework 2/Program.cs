@@ -4,11 +4,32 @@ namespace Homework_2
 {
     class Program
     {
+        static public int Minimum()
+        {
+            Console.WriteLine("Находим минимальное значение ");
+            Random rnd = new Random();
+            int a = rnd.Next(20);
+            int b = rnd.Next(20);
+            Console.WriteLine("Первое значение " + a);
+            Console.WriteLine("Второе значение " + b);
+            int min;
+            if (a > b)
+            {
+                min = b;
+            }
+            else
+            {
+                min = a;
+            }
+            return min;
+        } 
         static void Main(string[] args)
         {
             //Task 1 - Написать метод, возвращающий минимальное из трёх чисел.
+            Console.WriteLine("Минимальное значение " + Minimum());
 
-            int x;
+
+            /*int x;
             Console.WriteLine("Введите первое число");
             x = Convert.ToInt32(Console.ReadLine());
             int b;
@@ -92,7 +113,7 @@ namespace Homework_2
                 counter++;
             }
             while (counter < 2);
-            Console.WriteLine("Для выхода из приложение нажмите Enter");
+            Console.WriteLine("Для выхода из приложение нажмите Enter");*/
         }
     }
 }
